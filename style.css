@@ -1,91 +1,88 @@
-* {
+* {/*definindo preenchimento e a margem para zero e colocando a fonte do texto em arial*/
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    padding-bottom: 100px;
+header{ 
+    padding-bottom: 100px;/*aumentando o cabeçalho usando o padding-bottom*/
 }
 button{
-    background-color: transparent;
-    border: none;
-    transition: .3s;
+    background-color: transparent;/*colocando o fundo do button como transparente*/
+    border: none;/* tirando as bordas padroes do button*/
+    transition: .3s; /*adicionando uma transição quando o mouse entrar*/
 
 }
-button:hover{
-    transform: scale(1.3);
-    transition: .3s;
+button:hover{ /*prorpiedade hover, que serve pra executar ação quando o mouse tiver por cima do objeto da classe */
+    transform: scale(1.3);/*aumentando a escala*/
+    transition: .3s;/*adicionando uma transição quando o mouse sair*/
 }
 body{
-    background-image:url("IMG/711a6af08ef020cec6b4a8dc9722d4e1.jpg");
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image:url("IMG/711a6af08ef020cec6b4a8dc9722d4e1.jpg");/*botando imagem de background*/
+    display: flex;/*definindo o display flex para fazer tudo do body ficar na horizontal*/
+    flex-direction: column;/*usando a propriedade flex direction pra transformar de horizontal pra vertical*/
+    justify-content: center;/*prorpiedade do display flex pra juntar no meio da tela tudo do body*/
 }
 nav{
-    background-color: rgba(255, 0, 0);
+    background-color: rgba(255, 0, 0);/*mudando a cor da navegação*/
     /*position: fixed;*/
-    width: 100%;
+    width: 100%;/*definindo a largura em 100% da tela*/
 }
 a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 600;
-    transition: .3s;
+    text-decoration: none; /*tirando a linha que fica de baixo do texto*/
+    color: rgb(0, 0, 0); /*colocando a cor do texto a*/
+    font-size: 20px; /*aumentando a fonte */
+    font-weight: 600; /*aumentando a grossura do texto*/
+    transition: .3s; /*transição do texto*/
 }
-.textMenu{
-    display: flex;
+.textMenu{/*chamando a classe criada artificialmente usando o . e o nome da classe*/
+    display: flex; /*definindo na horizontal*/
 
 }
-.textMenu a{
-    padding: 20px;
+.textMenu a{/*chamando a classe criada artificialmente usando o . e o nome da classe, e chamando junto o iten de dentro a*/
+    padding: 20px; /*botando espaço entre os texto do menu*/
 
 }
-li a:hover{
+li a:hover{/*propriedade pra quando passar o mouse em cima da tag a de texto com link do menu*/
     background-color: rgb(0, 0, 0);
     color: rgb(255, 0, 0);
-    border-radius: 5px;
+    border-radius: 5px; /*arrendondado a bordar do fundo da tag a*/
     transition: .3s;
 }
 ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: flex;/*definindo alinhamento dos itens dentro no meio*/
+    align-items: center;/*alinhando itens no meio vertical*/
+    justify-content: space-around;/*alinhando itens no meio horizontal*/
 
 }
 li{
-    list-style: none;
-}
-.logoS{
-
+    list-style: none;/*tirando a bolinha que vem nos itens de dentro da lista li*/
 }
 main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;/*passando de flex horizontal para flex vertical*/
+    align-items: center;/*alinhando itens contido na main para o meio*/
+    justify-content: center;/*alinhando itens contido na main para o meio*/
 }
 main img{
-    transition: .3s;
+    transition: .3s;/*adicionando animação*/
 }
-main img:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+main img:hover{/*propriedade de quando passar o mouse por cima*/
+    transform: scale(1.1);/*aumentando o tamanho da imagem*/
+    cursor: pointer; /*quando o mouse ficar em cima da imagem principal ela vai ficar do formato de ponteiro*/
     transition: .3s;
 
 }
 h1{
-    padding-top: 50px;
-    font-size: 50px;
+    padding-top: 50px;/*aumentando o espaçamento de cima*/
+    font-size: 50px; /*aumentando o tamanho da fonte*/
     color: rgb(0, 0, 0)
 }
-.textoIntrodutorio{
-    margin-top: 100px;
+.textoIntrodutorio{/*chamando a classe criada artificialmente usando o . e o nome da classe*/
+    margin-top: 100px;/*aumentando a margem de cima do texto*/
     display: flex;
     justify-content: center;
     background-color: white;
-    height: 5000px;
-    width: 1000px;
-    border-radius: 50px;
+    height: 5000px;/*definindo altura da tela em branco*/
+    width: 1000px;/*definindo largura da tela em branco*/
+    border-radius: 50px; /*arredondando bordas*/
 }
