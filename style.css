@@ -27,6 +27,16 @@ nav{
     /*position: fixed;*/
     width: 100%;/*definindo a largura em 100% da tela*/
 }
+.nav2{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(141, 0, 0,.8);
+}
+.nav2 a{
+    color: rgba(0, 0, 0);
+    padding-left: 30px;
+    padding-right: 30px;
+}
 a{
     text-decoration: none; /*tirando a linha que fica de baixo do texto*/
     color: rgb(0, 0, 0); /*colocando a cor do texto a*/
@@ -63,13 +73,8 @@ main{
     align-items: center;/*alinhando itens contido na main para o meio*/
     justify-content: center;/*alinhando itens contido na main para o meio*/
 }
-main img{
-    transition: .3s;/*adicionando animação*/
-}
 main img:hover{/*propriedade de quando passar o mouse por cima*/
-    transform: scale(1.1);/*aumentando o tamanho da imagem*/
     cursor: pointer; /*quando o mouse ficar em cima da imagem principal ela vai ficar do formato de ponteiro*/
-    transition: .3s;
 
 }
 h1{
@@ -80,9 +85,14 @@ h1{
 .textoIntrodutorio{/*chamando a classe criada artificialmente usando o . e o nome da classe*/
     margin-top: 100px;/*aumentando a margem de cima do texto*/
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     height: 5000px;/*definindo altura da tela em branco*/
     width: 1000px;/*definindo largura da tela em branco*/
     border-radius: 50px; /*arredondando bordas*/
+}
+.textoIntrodutorio img{
+    background-color: rgb(165, 165, 165);
+    padding: 50px;
 }
