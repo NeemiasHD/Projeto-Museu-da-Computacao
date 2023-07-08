@@ -1,10 +1,17 @@
 * {/*definindo preenchimento e a margem para zero e colocando a fonte do texto em arial*/
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{ 
-    padding-bottom: 100px;/*aumentando o cabeçalho usando o padding-bottom*/
+p{
+    font-size: 26px;
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    padding-bottom: 0px;/*aumentando o cabeçalho usando o padding-bottom*/
 }
 button{
     background-color: transparent;/*colocando o fundo do button como transparente*/
@@ -17,7 +24,10 @@ button:hover{ /*prorpiedade hover, que serve pra executar ação quando o mouse 
     transition: .3s;/*adicionando uma transição quando o mouse sair*/
 }
 body{
-    background-image:url("IMG/711a6af08ef020cec6b4a8dc9722d4e1.jpg");/*botando imagem de background*/
+    background-image:url("IMG/wallpaperflare.com_wallpaper\ \(1\).jpg");/*botando imagem de background*/
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     display: flex;/*definindo o display flex para fazer tudo do body ficar na horizontal*/
     flex-direction: column;/*usando a propriedade flex direction pra transformar de horizontal pra vertical*/
     justify-content: center;/*prorpiedade do display flex pra juntar no meio da tela tudo do body*/
@@ -27,20 +37,10 @@ nav{
     /*position: fixed;*/
     width: 100%;/*definindo a largura em 100% da tela*/
 }
-.nav2{
-    display: flex;
-    justify-content: center;
-    background-color: rgba(141, 0, 0,.8);
-}
-.nav2 a{
-    color: rgba(0, 0, 0);
-    padding-left: 30px;
-    padding-right: 30px;
-}
 a{
     text-decoration: none; /*tirando a linha que fica de baixo do texto*/
     color: rgb(0, 0, 0); /*colocando a cor do texto a*/
-    font-size: 20px; /*aumentando a fonte */
+    font-size: 25px; /*aumentando a fonte */
     font-weight: 600; /*aumentando a grossura do texto*/
     transition: .3s; /*transição do texto*/
 }
@@ -73,17 +73,67 @@ main{
     align-items: center;/*alinhando itens contido na main para o meio*/
     justify-content: center;/*alinhando itens contido na main para o meio*/
 }
-main img:hover{/*propriedade de quando passar o mouse por cima*/
-    cursor: pointer; /*quando o mouse ficar em cima da imagem principal ela vai ficar do formato de ponteiro*/
+.logoprincipal{
+    background-color: rgba(0, 0, 0,.5);
+    padding-top:50px;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*Parte de informaçoes*/
+
+
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;/*aumentando o espaçamento de cima*/
+    margin-bottom: 100px;
+    padding: 20px;
+    font-size: 50px; /*aumentando o tamanho da fonte*/
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(184, 28, 28);
+    font-weight: 600;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    
+}
+.sobre{
+    display: flex;
+    justify-content: center;
+}
+.sobre img{
+    display: block;
+    margin-left: 50px;
+    transition: .3s;
+    margin-bottom: 45px;
+    border-radius: 50px;
+}
+.sobre img:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    
+}
+.separacao{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
 
 }
-h1{
-    padding-top: 50px;/*aumentando o espaçamento de cima*/
-    font-size: 50px; /*aumentando o tamanho da fonte*/
-    color: rgb(0, 0, 0)
-}
 .textoIntrodutorio{/*chamando a classe criada artificialmente usando o . e o nome da classe*/
-    margin-top: 100px;/*aumentando a margem de cima do texto*/
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,8 +141,12 @@ h1{
     height: 5000px;/*definindo altura da tela em branco*/
     width: 1000px;/*definindo largura da tela em branco*/
     border-radius: 50px; /*arredondando bordas*/
+    border: 5px solid rgb(255, 0, 0);
+
+    
 }
-.textoIntrodutorio img{
-    background-color: rgb(165, 165, 165);
-    padding: 50px;
+.mensagem{
+    display: flex;
+    margin-bottom: 50px;
 }
+
