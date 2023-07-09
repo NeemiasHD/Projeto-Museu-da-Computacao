@@ -167,10 +167,7 @@ h1{
     margin-bottom: 50px;
 }
 
-@media (max-width: 1200px) {
-    ul{
-        justify-content: space-between;
-    }
+@media (max-width: 1440px) {
     p{
     font-size: 16px;
     }
@@ -181,11 +178,19 @@ h1{
         width: 100%;
     }
     .toTop{
+        position: fixed;
         right: 50px;
     
     }
     .sobre img{
         margin: 0px;
+    }
+    .sobre img:hover{
+        transform: scale(1.0);
+    }
+    .sobre{
+        flex-direction: column;
+        align-items: center;
     }
 
 
