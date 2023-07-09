@@ -27,7 +27,7 @@ body{
     background-image:url("IMG/wallpaperflare.com_wallpaper\ \(1\).jpg");/*botando imagem de background*/
     background-size: 100%;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     display: flex;/*definindo o display flex para fazer tudo do body ficar na horizontal*/
     flex-direction: column;/*usando a propriedade flex direction pra transformar de horizontal pra vertical*/
     justify-content: center;/*prorpiedade do display flex pra juntar no meio da tela tudo do body*/
@@ -42,7 +42,7 @@ a{
     color: rgb(0, 0, 0); /*colocando a cor do texto a*/
     font-size: 25px; /*aumentando a fonte */
     font-weight: 600; /*aumentando a grossura do texto*/
-    transition: .3s; /*transição do texto*/
+    transition: .3s;/*transição do texto*/
 }
 .textMenu{/*chamando a classe criada artificialmente usando o . e o nome da classe*/
     display: flex; /*definindo na horizontal*/
@@ -56,7 +56,7 @@ li a:hover{/*propriedade pra quando passar o mouse em cima da tag a de texto com
     background-color: rgb(0, 0, 0);
     color: rgb(255, 0, 0);
     border-radius: 5px; /*arrendondado a bordar do fundo da tag a*/
-    transition: .3s;
+    transition: .5s;
 }
 ul{
     display: flex;/*definindo alinhamento dos itens dentro no meio*/
@@ -83,8 +83,26 @@ main{
     justify-content: center;
 }
 
+/*botão de voltar pra cima*/
+.toTop{
+    background: rgb(223, 0, 0);
+    position: fixed;
+    bottom: 16px;
+    width: 50px;
+    height: 50px;
+    right: 32px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
 
-
+}
+.toTop:hover{
+    background: rgb(142, 0, 0);
+}
 
 /*Parte de informaçoes*/
 
