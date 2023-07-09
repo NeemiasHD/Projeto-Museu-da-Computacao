@@ -115,7 +115,6 @@ h1{
     align-items: center;
     margin-top: 20px;/*aumentando o espaçamento de cima*/
     margin-bottom: 100px;
-    padding: 20px;
     font-size: 50px; /*aumentando o tamanho da fonte*/
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgb(184, 28, 28);
@@ -168,3 +167,26 @@ h1{
     margin-bottom: 50px;
 }
 
+@media (max-width: 1200px) {
+    ul{
+        justify-content: space-between;
+    }
+    p{
+    font-size: 16px;
+    }
+    .logoIA{
+        display: none;
+    }
+    .textoIntrodutorio{
+        width: 100%;
+    }
+    .toTop{
+        right: 50px;
+    
+    }
+    .sobre img{
+        margin: 0px;
+    }
+
+
+  }
