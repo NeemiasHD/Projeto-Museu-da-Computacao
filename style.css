@@ -142,7 +142,7 @@ main {
 
 /*botão de voltar pra cima*/
 .toTop {
-    background: rgba(255, 0, 51, 0.45);
+    background: rgb(123, 0, 25);
     position: fixed;
     bottom: 16px;
     width: 50px;
@@ -154,12 +154,10 @@ main {
     align-items: center;
     text-decoration: none;
     transition: all .3s;
-    cursor: pointer;
 
 }
-
 .toTop:hover {
-    background: rgba(255, 0, 51, 0.745);
+    background: rgba(255, 0, 51);
 }
 
 /*Parte de informaçoes*/
@@ -226,8 +224,8 @@ h1 {
     width: 1000px;
     /*definindo largura da tela em branco*/
     /*arredondando bordas*/
-    border-left: 10px solid rgba(255, 0, 51, 0.45);
-    border-right: 10px solid rgba(255, 0, 51, 0.45);
+    border-left: 10px solid rgb(123, 0, 25);
+    border-right: 10px solid rgb(123, 0, 25);
 
 
 }
